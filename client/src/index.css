@@ -1,0 +1,23 @@
+:root {
+  font-family: 'Jura', sans-serif;
+  line-height: 1.5;
+  font-weight: normal;
+
+  color-scheme: light dark;
+  background-color: #344CB7;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}

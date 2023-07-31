@@ -1,0 +1,88 @@
+#Cursos {
+    height: 100vh;
+    padding-left: 25px;
+    padding-top: 25px;
+    background-color: #344CB7;
+}
+
+
+#cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+
+.cursos-content {
+    width:35%;
+}
+
+.curso p{
+    background-color: #4259C5;
+    padding: 3%;
+    margin: 0px;
+    border-top-right-radius: 3px;
+}
+
+
+.curso h3{
+    background-color: #C6365F;
+    padding:8px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-radius:10px;
+    width: 75%;
+    margin: 0px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-left: 34.5vw;
+}
+
+@media (max-width:600px) {
+   #cursos-container {
+    flex-direction: column;
+    width: 100%;
+   }
+
+   .cursos-content {
+    margin-bottom:30px;
+   }
+   .curso h3 {
+    width: 180%
+   }
+
+   .curso p {
+    width: 250%;
+   }
+   #Cursos {
+    height: 24.5%;
+   }
+
+   img {
+    display: none;
+   }
+    
+}
+
+
+@media (min-width: 1281px) {
+    #Cursos {
+        padding-top: 2%;
+        height: 25%;
+    }
+
+    #Cursos img {
+        margin-left: 113%;
+        width: 120px;
+        height: 120px;
+    }
+
+    .cursos-content {
+        margin-left: -1.5%;
+    }
+  
+}

@@ -1,0 +1,112 @@
+#Inscricao {
+    background-color: #344CB7;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.form-content{
+    display: flex;
+    flex-direction: row;
+}
+
+#btn-submit {
+    background-color: #23337B;
+    font-family: 'Jura', sans-serif;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5% 0% 
+
+}   
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #D2D2D2;
+    color: #23337B;
+    font-family: 'Jura', sans-serif;
+}
+
+p {
+    font-weight: bold;
+}
+
+#btn-submit {
+    flex-direction: column;;
+}
+
+.mymodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    background-color: #D2D2D2;
+    border: 1px solid #ccc;
+    color: black;
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+  }
+  
+  .myoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+
+@media (max-width:600px) {
+    .form-content{
+        flex-direction: column;
+    }
+    #Inscricao {
+        overflow: auto;
+        justify-content: unset;
+        align-items: center;
+    }
+    
+}
+
+
+
+@media (min-width: 1281px) {
+    .card-content {
+        height: 95%;
+    }
+
+    
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .form-content {
+        flex-direction: column;
+    }
+} 
