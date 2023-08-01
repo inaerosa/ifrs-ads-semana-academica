@@ -41,7 +41,7 @@ app.get('/api/export', async (req, res, next) => {
   let {curso} = req.query;
   const dia = getDay(req.query.dia);
 
-  if (dia.includes('mesa')) curso = 'true'
+  if (curso.includes('mesa')) curso = 'true'
 
   const query = {
     [dia]: curso
@@ -80,7 +80,7 @@ app.get('/api/export', async (req, res, next) => {
 
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
-    var file = __dirname + '/arquivo_com_senha.zip';
+    var file = __dirname + '/files/arquivo_com_senha.zip';
     var filename = path.basename(file);
 
     res.setHeader('Content-disposition', 'attachment; filename=' + filename);
