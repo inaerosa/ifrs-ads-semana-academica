@@ -12,20 +12,32 @@ function Inscricao() {
   const [nome, setNome] = useState('');
 
   const methods = useForm();
+  const [message, setMessage] = useState('');
 
   const onSubmit = async (data) => {
     const student = data;
     setNome(student.nome)
-    toggleModal()
-    try{
-      await axios.post('http://localhost:3000/api', student);
-    }catch(err) {
-      console.error(err)
+
+    let res;
+
+    console.log(student)
+    if (student.primeiro_dia === null && student.segundo_dia === null && student.mesa_redonda === false) {
+      setMessage('Você precisa escolher ao menos um evento');
+      return toggleModal();
     }
 
-   };
-   
-   const [isOpen, setIsOpen] = useState(false);
+    try{
+       res = await axios.post('http://localhost:3000/api', student);
+    } catch(err) {
+      res = err;
+    }
+
+    if (res.status === 201) setMessage('Sua inscrição foi realizada com sucesso!')
+    if (res.status !== 201)  setMessage('Detectamos um erro na sua inscrição.')
+    toggleModal()
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {
     setIsOpen(!isOpen);
@@ -42,7 +54,7 @@ function Inscricao() {
         closeTimeoutMS={500}
       >
         <h3>Olá, {nome} </h3>
-        <p>Sua inscrição foi confirmada com sucesso!</p>
+        <p>{message}</p>
       </Modal>
       <div id="Inscricao">
         <h1>Inscrições</h1>

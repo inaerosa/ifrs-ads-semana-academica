@@ -14,7 +14,7 @@ const Card = ({ content, title, date, sub }) => {
           <div className="checkbox-inputs">
           <label htmlFor="impressão 3D"></label>
           <input
-              {...register('primeiro_dia', { required: true })}
+              {...register('primeiro_dia')}
               type="radio"
               name="primeiro_dia"
               value="impressao"
@@ -26,7 +26,7 @@ const Card = ({ content, title, date, sub }) => {
           <label htmlFor="React"></label>
           <div className="checkbox-inputs">
             <input
-              {...register('primeiro_dia', { required: true })}
+              {...register('primeiro_dia')}
               type="radio"
               name="primeiro_dia"
               value="react"
@@ -43,7 +43,7 @@ const Card = ({ content, title, date, sub }) => {
           <p>Mini-cursos</p>
           <div className="checkbox-inputs">
           <input
-              {...register('segundo_dia', { required: true })}
+              {...register('segundo_dia')}
               type="radio"
               name="segundo_dia"
               value="Robotica"
@@ -56,7 +56,7 @@ const Card = ({ content, title, date, sub }) => {
           </div>
           <div className="checkbox-inputs">
           <input
-              {...register('segundo_dia', { required: true })}
+              {...register('segundo_dia')}
               type="radio"
               name="segundo_dia"
               value="react-native"
@@ -97,7 +97,12 @@ const Card = ({ content, title, date, sub }) => {
               name="CPF" 
               id="CPF" 
               placeholder="Seu CPF"
-              {...register('CPF', { required: 'CPF é um campo obrigatório', message: "CPF invalido" })}
+              {...register('CPF', {
+                required: 'CPF é um campo obrigatório', 
+                pattern: {
+                value: /[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}/i,
+                message: "CPF invalido"
+              } })}
 
             /> 
           <label>E-mail</label>
