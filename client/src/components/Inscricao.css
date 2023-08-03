@@ -40,7 +40,8 @@ p {
 }
 
 #btn-submit {
-    flex-direction: column;;
+    flex-direction: column;
+    color: white;
 }
 
 .mymodal {
