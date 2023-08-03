@@ -27,7 +27,7 @@ function Inscricao() {
     }
 
     try{
-       res = await axios.post('http://localhost:3000/api', student);
+       res = await axios.post('https://ads.osorio.ifrs.edu.br/back/api', student);
     } catch(err) {
       res = err;
     }
