@@ -10,11 +10,11 @@ function MesaRedonda() {
             <div className="mesa-redonda-content">
                 <img src={People} alt=""  />
                 <div>
-                  <p>No terceiro dia da nossa semana acadêmica, teremos um bate-papo com estudantes e egressos do curso de Análise e Desenvolvimento de Sistemas que já trabalham na área falando sobre a realidade do mercado de TI nos tempos atuais. 
+                  <p>No terceiro dia da nossa semana acadêmica, teremos um bate-papo com os estudantes Lucas Alves, Inaê Rosa e Max Carlesso do curso de Análise e Desenvolvimento de Sistemas que já trabalham na área, o desenvolvedor fullstack da Sebrae Gilto Barcela e o analista de negócios da Devintec, XXXXX, falando sobre o mercado de TI nos tempos atuais. 
                   <br/>
                   <br/>
                   
-                  Com mediação do professor Bruno Fernandes, o bate-papo irá ocorrer com a finalidade de entender quais são os primeiros passos para começar a carreira, além disso, será disponibilizado um momento para responder dúvidas do público e trocar experiências
+                  Com mediação da professora Bruna Flor da Rosa, o bate-papo irá ocorrer com a finalidade de entender quais são os primeiros passos para começar a carreira, além  de compreender o cenário atual do mercado de TI. Com um espaço aberto para interação do público, nosso maior objetivo é trocarmos experiências!
                   <br/>
                   <br/>
                   Venha participar!

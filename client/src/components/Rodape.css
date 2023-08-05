@@ -1,0 +1,38 @@
+#rodape {
+  background: -webkit-linear-gradient(360deg, #000057,#344cb7);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(360deg, #000057,#344cb7);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  padding-top: 8%;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parceiros {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  padding-left: 20%;
+}
+
+.parceiros img {
+  margin: 0px;
+  width: 150px;
+  height: 150px;
+}
+
+
+@media (max-width:600px) {
+  .info {
+    padding: 20px;
+  }
+  
+}
+
+
+

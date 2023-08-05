@@ -1,10 +1,53 @@
 /* eslint-disable react/prop-types */
 import { useFormContext } from 'react-hook-form';
+import { validate } from 'gerador-validador-cpf';
+
 import './Card.css';
+
+//Função que verifica se um cpf é válido usando o algoritmo da Receita Federal
+//Verifica também se os pontos e o traço estão na posição correta
+
+function validaCPF(cpf){
+	if((cpf[3] == ".")
+		&&(cpf[7] == ".")
+		&&(cpf[11] == "-")
+		&&(cpf.length == 14)
+		&&(!isNaN(cpf.substring(0,3)))
+		&&(!isNaN(cpf.substring(4,7)))
+		&&(!isNaN(cpf.substring(8,11)))
+		&&(!isNaN(cpf.substring(12)))
+		&&(((parseInt(cpf[0])*10
+			+parseInt(cpf[1])*9
+			+parseInt(cpf[2])*8
+			+parseInt(cpf[4])*7
+			+parseInt(cpf[5])*6
+			+parseInt(cpf[6])*5
+			+parseInt(cpf[8])*4
+			+parseInt(cpf[9])*3
+			+parseInt(cpf[10])*2)
+		    *10%11) == parseInt(cpf[12]))
+		&&(((parseInt(cpf[0])*11
+			+parseInt(cpf[1])*10
+			+parseInt(cpf[2])*9
+			+parseInt(cpf[4])*8
+			+parseInt(cpf[5])*7
+			+parseInt(cpf[6])*6
+			+parseInt(cpf[8])*5
+			+parseInt(cpf[9])*4
+			+parseInt(cpf[10])*3
+			+parseInt(cpf[12])*2)
+		    *10%11) == parseInt(cpf[13]))
+		&& !(cpf[0] == cpf[1] == cpf[2] == cpf[4] == cpf[5] == cpf[6] == cpf[8] == cpf[9] == cpf[10] == cpf[12] == cpf[12])
+		){
+		return true;
+	}else{
+		return false;
+	}
+}
 
 const Card = ({ content, title, date, sub }) => {
   const { register, formState: { errors } } = useFormContext();
-
+  // const [inputCPF, setInputCPF] = useState();
 
   const renderCardContent = () => {
     if (content === 'first-day') {
@@ -96,18 +139,23 @@ const Card = ({ content, title, date, sub }) => {
               type="text" 
               name="CPF" 
               id="CPF" 
+
               placeholder="Seu CPF"
-              {...register('CPF', {
-                required: 'CPF é um campo obrigatório', 
-                pattern: {
-                value: /[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}/i,
-                message: "CPF invalido"
-              } })}
+              onChange={(e) => {
+                const inputValue = e.target.value.replace(/\D/g, ''); // Remove non-digit characters
+                e.target.value = inputValue;
+                console.log(inputValue)
+                return inputValue;
+              }}
+              {...register('cpf', {
+                required: 'CPF é obrigatório',
+                validate: validaCPF,
+              })}
 
             /> 
           <label>E-mail</label>
             <input 
-              type="text" 
+              type="email" 
               name="email" 
               id="email" 
               placeholder="Seu email"
