@@ -40,12 +40,12 @@ function validaCPF(cpf){
 		){
 		return true;
 	}else{
-		return false;
+		return 'CPF inválido';
 	}
 }
 
 const Card = ({ content, title, date, sub }) => {
-  const { register, formState: { errors } } = useFormContext();
+  const { register, formState: { errors }, resetField } = useFormContext();
   // const [inputCPF, setInputCPF] = useState();
 
   const renderCardContent = () => {
@@ -77,6 +77,12 @@ const Card = ({ content, title, date, sub }) => {
             />{' '}
             <label>Introdução ao Desenvolvimento Web com React</label>
           </div>
+          <button
+            type="button"
+            onClick={() => resetField("primeiro_dia", { defaultValue: '' })}
+          >
+          Desmarcar opções
+          </button>
         </>
       );
     } else if (content === 'second-day') {
@@ -106,9 +112,15 @@ const Card = ({ content, title, date, sub }) => {
               id="react-native"
             />{' '}
             <label htmlFor="teste">
-              Aplicações Mobile(React Native)
+              Desenvolvimento Mobile com React Native
             </label>
           </div> 
+          <button
+            type="button"
+            onClick={() => resetField("segundo_dia", { defaultValue: '' })}
+          >
+          Desmarcar opções
+          </button>
         </>
       );
     } else if (content === 'three-day') {
@@ -125,13 +137,23 @@ const Card = ({ content, title, date, sub }) => {
       return (
         <>
           <div id="info">
-          <label>Nome</label>
+          <label>Nome completo</label>
             <input 
               type="text" 
               name="nome" 
               id="nome" 
-              placeholder="Seu nome"
-              {...register('nome', { required: 'Nome é um campo obrigatório' })}
+              placeholder="Seu nome completo"
+              {...register('nome', 
+                  { 
+                    minLength:{
+                      value: 5,
+                      message: "Insira seu nome completo"
+                    },
+                    required: 'Nome é um campo obrigatório' 
+                  }
+                )
+              }
+
             />
           <label>CPF</label>
             <input 
@@ -149,6 +171,7 @@ const Card = ({ content, title, date, sub }) => {
               {...register('cpf', {
                 required: 'CPF é obrigatório',
                 validate: validaCPF,
+
               })}
 
             /> 
@@ -177,7 +200,7 @@ const Card = ({ content, title, date, sub }) => {
 
             {errors.nome && <span className="error-message">{errors.nome.message}</span>}
             {errors.email && <span className="error-message">{errors.email.message}</span>}
-            {errors.CPF && <span className="error-message">{errors.CPF.message}</span>}
+            {errors.cpf && <span className="error-message">{errors.cpf.message}</span>}
             {errors.instituicao && <span className="error-message">{errors.instituicao.message}</span>}
           </div>
        

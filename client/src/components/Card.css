@@ -47,6 +47,19 @@
     ;
 }
 
+button {
+    color: #23337B;
+    background-color: #DFDFDF;
+    border: none;   
+    margin-top: 26%;
+}
+
+button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 @media (max-width:600px) {
     .card-content{
         width: 70%;
