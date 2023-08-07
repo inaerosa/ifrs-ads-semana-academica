@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useFormContext } from 'react-hook-form';
-import { validate } from 'gerador-validador-cpf';
 
 import './Card.css';
 
