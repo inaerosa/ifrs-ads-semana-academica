@@ -21,15 +21,13 @@ function Cursos() {
         {
             id: 2,
             title: 'Introdução à Impressão 3D',
-            author: 'Ministrante: Yuri Agliardi',
-            monitor: "Monitor: Rafael Ens",
+            author: 'Ministrantes: Yuri Agliardi e Rafael Ens',
             description: 'Descubra e domine conceitos básicos de impressão 3D como regulagem da impressora e parâmetros de configuração da impressão.'
         },
         {
             id: 3,
             title: 'Introdução à Robótica',
-            author: 'Ministrante: Yuri Agliardi',
-            monitor: "Monitor: Vitor Nunes",
+            author: 'Ministrantes: Yuri Agliardi e Vitor Nunes',
             description: 'Aprenda conceitos relacionados à robótica com o Arduino. Descubra componentes eletrônicos e desenvolva soluções para problemas reais.'
         }
     ]
@@ -60,8 +58,6 @@ function Cursos() {
                 <div className="curso">
                     <h3>{cursos[2].title}</h3>
                     <p>{cursos[2].author}</p>
-                    <p>{cursos[2].monitor}</p>
-
                     <p>{cursos[2].description}</p>
                 </div>
             </div>
@@ -69,8 +65,6 @@ function Cursos() {
                 <div className="curso">
                     <h3>{cursos[3].title}</h3>
                     <p>{cursos[3].author}</p>
-                    <p>{cursos[3].monitor}</p>
-
                     <p>{cursos[3].description}</p>
                 </div>
             </div>
