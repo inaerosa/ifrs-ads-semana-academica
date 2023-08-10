@@ -6,15 +6,15 @@ function MesaRedonda() {
   return (
     <>
         <div id="MesaRedonda">
-        <h1>Mesa Redonda</h1>
+        <h1>Mesa Redonda: O Mercado de TI e as Novas Tecnologias</h1>
             <div className="mesa-redonda-content">
                 <img src={People} alt=""  />
                 <div>
-                  <p>No terceiro dia da nossa semana acadêmica, teremos um bate-papo com os estudantes Lucas Alves, Inaê Rosa e Max Carlesso do curso de Análise e Desenvolvimento de Sistemas que já trabalham na área e o desenvolvedor fullstack da Sebrae Gilto Barcela, falando sobre o mercado de TI nos tempos atuais e as novas tecnologias. 
+                  <p>No terceiro dia da nossa semana acadêmica, mediado pela professora doutoranda da UFRGS, Bruna Flor da Rosa, teremos um bate-papo com alunos do curso que já estão atuando na área para entender quais foram os primeiros passos necessários para entrar no mercado, além disso, traremos dois desenvolvedores de diferentes áreas da TI para compreender melhor o cenário de TI atual e suas novas tecnologias. 
                   <br/>
                   <br/>
                   
-                  Com mediação da professora Bruna Flor da Rosa, o bate-papo irá ocorrer com a finalidade de entender quais são os primeiros passos para começar a carreira, além  de compreender o cenário atual do mercado de TI. Com um espaço aberto para interação do público, nosso maior objetivo é trocarmos experiências!
+                  Diferentemente de uma palestra, a ideia é construirmos um bate-papo com interação direta do público, a fim de trocarmos experiências.
                   <br/>
                   <br/>
                   Venha participar!
