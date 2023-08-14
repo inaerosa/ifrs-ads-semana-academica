@@ -103,16 +103,12 @@ const Card = ({ content, title, date, sub }) => {
             </label>
           </div>
           <div className="checkbox-inputs">
-          <input
-              {...register('segundo_dia')}
-              type="radio"
-              name="segundo_dia"
-              value="react-native"
-              className="form-check-input"
-              id="react-native"
-            />{' '}
+
             <label htmlFor="teste">
-              Desenvolvimento Mobile com React Native
+              <div className="esgotado">
+                Desenvolvimento Mobile com React Native 
+              </div>
+              <span>Esgotado</span>
             </label>
           </div> 
           <button

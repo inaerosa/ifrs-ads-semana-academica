@@ -47,6 +47,14 @@
     ;
 }
 
+.esgotado{
+    text-decoration: line-through;
+}
+
+span {
+    background-color: rgba(255, 0, 0, 0.233);
+    color: red;
+}
 button {
     color: #23337B;
     background-color: #DFDFDF;
