@@ -32,6 +32,9 @@
        padding-left: 0%;
     }
     
+    #mesa {
+        display: none;
+    }
 }
 
 @media (min-width: 1370px) {

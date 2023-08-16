@@ -1,6 +1,7 @@
 import './Rodape.css'
-import People from '../assets/people.png'
-
+import GBSeguros from '../assets/GBSeguros.png'
+import DeboraVargas from '../assets/DeboraVargas.png'
+import RD from '../assets/RD.jpeg'
 
 function Rodape() {
   return (
@@ -14,9 +15,9 @@ function Rodape() {
           <div className="parceiros">
             <h3>Nossos patrocinadores</h3>
             <div className="logos">
-              <img src={People} alt=""  />
-              <img src={People} alt=""  />
-              <img src={People} alt=""  />
+              <a href="https://instagram.com/gbsegurosbrasil?igshid=MzRlODBiNWFlZA=="><img id="gbSeguros" src={GBSeguros} alt=""/></a>
+              <a href="https://instagram.com/rd_assistenciatec?igshid=MzRlODBiNWFlZA=="><img src={RD} alt=""/></a>
+              <a href="https://instagram.com/dvaarq?igshid=MzRlODBiNWFlZA=="><img src={DeboraVargas} alt=""  /></a>
             </div>
           </div>
         </div>

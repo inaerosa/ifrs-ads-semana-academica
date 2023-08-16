@@ -44,7 +44,7 @@ function Cursos() {
                     <p>{cursos[0].author}</p>
                     <p>{cursos[0].description}</p>
                 </div>
-            <img src={Foguete} alt=""  />
+            <img id="foguete" src={Foguete} alt=""  />
             </div>
             <div className="cursos-content">
                 <div className="curso">

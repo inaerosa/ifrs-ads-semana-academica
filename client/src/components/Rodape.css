@@ -15,18 +15,22 @@
 
 .parceiros {
   display: flex;
-  display: none;
   flex-direction: column;
   padding-left: 20%;
 }
 
 .parceiros img {
   margin: 0px;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  padding: 15px;
 }
 
 
+#gbSeguros {
+  width: 120px;
+  height: 90px;
+}
 @media (max-width:600px) {
   .info {
     padding: 20px;
