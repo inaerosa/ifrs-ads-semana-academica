@@ -16,27 +16,51 @@
 .parceiros {
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
+  padding-left: 10%;
 }
 
 .parceiros img {
   margin: 0px;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   padding: 15px;
 }
 
-
 #gbSeguros {
-  width: 120px;
+  width: 150px;
+  align-items: center;
   height: 90px;
 }
 @media (max-width:600px) {
   .info {
     padding: 20px;
   }
-  
-}
 
+  #rodape {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .logos{
+    display: flex;
+   align-items: center;
+    flex-direction: row;
+  }
+
+  .parceiros {
+    padding-left: 0%;
+    text-align: center;
+  }
+  .parceiros img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #gbSeguros {
+    width: 110px;
+    height: 70px;
+  }
+}
+  
 
 
