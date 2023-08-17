@@ -67,15 +67,12 @@ const Card = ({ content, title, date, sub }) => {
           </div>
           <label htmlFor="React"></label>
           <div className="checkbox-inputs">
-            <input
-              {...register('primeiro_dia')}
-              type="radio"
-              name="primeiro_dia"
-              value="react"
-              className="form-check-input"
-              id="react"
-            />{' '}
-            <label>Introdução ao Desenvolvimento Web com React</label>
+          <label htmlFor="teste">
+              <div className="esgotado">
+                Introdução ao desenvolvimento web com React
+              </div>
+              <span>Esgotado</span>
+            </label>
           </div>
           <button
             type="button"

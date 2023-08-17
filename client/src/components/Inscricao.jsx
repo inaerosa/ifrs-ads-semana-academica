@@ -79,7 +79,7 @@ function Inscricao() {
             <Card
               title="Terceiro dia"
               date="24/08 - Quinta-feira"
-              sub="das 19h15 às 22h30"
+              sub="das 19h15 às 22h00"
               content="three-day"
             />
           </div>
