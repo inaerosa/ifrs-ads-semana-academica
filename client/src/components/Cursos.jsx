@@ -21,7 +21,7 @@ function Cursos() {
         {
             id: 2,
             title: 'Introdução à Impressão 3D',
-            author: 'Ministrantes: Yuri Agliardi e Rafael Ens',
+            author: 'Ministrantes: Yuri Agliardi e Victor Pompeu',
             description: 'Descubra e domine conceitos básicos de impressão 3D como regulagem da impressora e parâmetros de configuração da impressão.'
         },
         {
