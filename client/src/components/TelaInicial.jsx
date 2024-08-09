@@ -9,7 +9,7 @@ function TelaInicial() {
                 <h1>SEMANA ACADÊMICA</h1>
                 <h2>TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h2>
                 <p>INSTITUTO FEDERAL DO RIO GRANDE DO SUL - CAMPUS OSÓRIO</p>
-                <p>DE 22/08 A 24/08/2023</p>
+                <p>DE 20/08 A 22/08/2024</p>
             </div>  
         </div>
 

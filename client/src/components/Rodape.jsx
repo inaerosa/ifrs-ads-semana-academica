@@ -12,14 +12,14 @@ function Rodape() {
             <p>Rua Santos Dumont, 2127 | Bairro Albatroz | CEP: 95520-000 | Osório/RS</p>
           </div>
           
-          <div className="parceiros">
+          {/* <div className="parceiros">
             <h3>Nossos patrocinadores</h3>
             <div className="logos">
               <a href="https://instagram.com/gbsegurosbrasil?igshid=MzRlODBiNWFlZA=="><img id="gbSeguros" src={GBSeguros} alt=""/></a>
               <a href="https://instagram.com/rd_assistenciatec?igshid=MzRlODBiNWFlZA=="><img src={RD} alt=""/></a>
               <a href="https://instagram.com/dvaarq?igshid=MzRlODBiNWFlZA=="><img src={DeboraVargas} alt=""  /></a>
             </div>
-          </div>
+          </div> */}
         </div>
     </>
   )

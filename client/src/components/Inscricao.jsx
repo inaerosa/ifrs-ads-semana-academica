@@ -66,19 +66,19 @@ function Inscricao() {
             />
             <Card
               title="Primeiro dia"
-              date="22/08 - Terça-feira"
+              date="20/08 - Terça-feira"
               sub="das 19h15 às 22h30"
               content="first-day"
             />
             <Card
               title="Segundo dia"
-              date="23/08 - Quarta-feira"
+              date="21/08 - Quarta-feira"
               sub="das 19h15 às 22h30"
               content="second-day"
             />
             <Card
               title="Terceiro dia"
-              date="24/08 - Quinta-feira"
+              date="22/08 - Quinta-feira"
               sub="das 19h15 às 22h00"
               content="three-day"
             />

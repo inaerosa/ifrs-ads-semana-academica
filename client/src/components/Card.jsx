@@ -54,31 +54,31 @@ const Card = ({ content, title, date, sub }) => {
         <>
           <p>Mini-cursos</p>
           <div className="checkbox-inputs">
-          <label htmlFor="impressão 3D"></label>
-          <input
+            <label htmlFor="docker"></label>
+            <input
               {...register('primeiro_dia')}
               type="radio"
               name="primeiro_dia"
-              value="impressao"
+              value="docker"
               className="form-check-input"
-              id="impressao"
+              id="docker"
             />{' '}
-            <label>Introdução à impressão 3D  </label>  
+            <label>Introdução à Docker</label>
           </div>
-          <label htmlFor="React"></label>
+          {/* <label htmlFor="React"></label>
           <div className="checkbox-inputs">
-          <label htmlFor="teste">
+            <label htmlFor="teste">
               <div className="esgotado">
                 Introdução ao desenvolvimento web com React
               </div>
               <span>Esgotado</span>
             </label>
-          </div>
+          </div> */}
           <button
             type="button"
             onClick={() => resetField("primeiro_dia", { defaultValue: '' })}
           >
-          Desmarcar opções
+            Desmarcar opções
           </button>
         </>
       );
@@ -87,98 +87,99 @@ const Card = ({ content, title, date, sub }) => {
         <>
           <p>Mini-cursos</p>
           <div className="checkbox-inputs">
-          <input
+            <input
               {...register('segundo_dia')}
               type="radio"
               name="segundo_dia"
-              value="Robotica"
+              value="devOps"
               className="form-check-input"
-              id="Robotica"
+              id="devOps"
             />{' '}
-            <label htmlFor="robótica">
-              Introdução à Robótica
+            <label htmlFor="devOps">
+            Princípios fundamentais do DevOps
             </label>
           </div>
-          <div className="checkbox-inputs">
+          {/* <div className="checkbox-inputs">
 
             <label htmlFor="teste">
               <div className="esgotado">
-                Desenvolvimento Mobile com React Native 
+                Desenvolvimento Mobile com React Native
               </div>
               <span>Esgotado</span>
             </label>
-          </div> 
+          </div> */}
           <button
             type="button"
             onClick={() => resetField("segundo_dia", { defaultValue: '' })}
           >
-          Desmarcar opções
+            Desmarcar opções
           </button>
         </>
       );
     } else if (content === 'three-day') {
       return (
         <>
-        <p>Palestras: </p>
-        <div className="checkbox-inputs">
-            <input type="checkbox" name="mesa_redonda" id="mesa_redonda" {...register('mesa_redonda')}/>
-            <label>Mesa Redonda: </label>
-        </div>
-    </>
+          <p>Palestras: </p>
+          <div className="checkbox-inputs">
+            <input type="checkbox" name="mesa_redonda" id="mesa_redonda" {...register('mesa_redonda')} />
+            <label>Uma jornada de adoção de Blockchain em ambientes de IoT: oportunidades e desafios </label>
+          </div>
+        </>
       );
     } else {
       return (
         <>
           <div id="info">
-          <label>Nome completo</label>
-            <input 
-              type="text" 
-              name="nome" 
-              id="nome" 
+            <label>Nome completo</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
               placeholder="Seu nome completo"
-              {...register('nome', 
-                  { 
-                    minLength:{
-                      value: 5,
-                      message: "Insira seu nome completo"
-                    },
-                    required: 'Nome é um campo obrigatório' 
-                  }
-                )
+              {...register('nome',
+                {
+                  minLength: {
+                    value: 5,
+                    message: "Insira seu nome completo"
+                  },
+                  required: 'Nome é um campo obrigatório'
+                }
+              )
               }
 
             />
-          <label>CPF</label>
-            <input 
-              type="text" 
-              name="CPF" 
-              id="CPF" 
+            <label>CPF</label>
+            <input
+              type="text"
+              name="CPF"
+              id="CPF"
               placeholder='Seu CPF: XXX.XXX.XXX-XX'
               {...register('cpf', {
                 required: 'CPF é obrigatório',
               })}
 
-            /> 
-          <label>E-mail</label>
-            <input 
-              type="email" 
-              name="email" 
-              id="email" 
+            />
+            <label>E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
               placeholder="Seu email"
               {...register('email', {
-                required: 'E-mail é um campo obrigatório', 
+                required: 'E-mail é um campo obrigatório',
                 pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                message: "E-mail invalido"
-              } })}
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  message: "E-mail invalido"
+                }
+              })}
             />
-          <label>Escola ou instituição</label>
-            <input 
-              type="text" 
-              name="instituicao" 
-              id="instituicao" 
+            <label>Escola ou instituição</label>
+            <input
+              type="text"
+              name="instituicao"
+              id="instituicao"
               placeholder="Sua escola ou instituição"
-              {...register('instituicao', { required: 'Escola ou instituição é um campo obrigatório'})}
+              {...register('instituicao', { required: 'Escola ou instituição é um campo obrigatório' })}
 
             />
 
@@ -187,7 +188,7 @@ const Card = ({ content, title, date, sub }) => {
             {errors.cpf && <span className="error-message">{errors.cpf.message}</span>}
             {errors.instituicao && <span className="error-message">{errors.instituicao.message}</span>}
           </div>
-       
+
         </>
       );
     }
