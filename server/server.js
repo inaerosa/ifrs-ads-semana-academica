@@ -6,7 +6,7 @@ import database from  './database/config.js';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
-import Student from './schema/Student.js';
+import Student from './schema/Student24.js';
 import fs from 'fs';
 import json2csv from 'json2csv';
 import { exec } from 'child_process';
@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 
 app.post('/api', async (req, res) => {
   try{
-    const student = new Student(req.body);
+    const student = new Student24(req.body);
     student.save();
     console.log(student)
     res.status(201).json(student)
