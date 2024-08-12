@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 
 app.post('/api', async (req, res) => {
   try{
-    const student = new Student24(req.body);
+    const student = new Student(req.body);
     student.save();
     console.log(student)
     res.status(201).json(student)
