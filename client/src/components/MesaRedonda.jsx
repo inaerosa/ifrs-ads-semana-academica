@@ -7,6 +7,7 @@ function MesaRedonda() {
     <>
       <div id="MesaRedonda">
         <h1>Palestra: Uma jornada de adoção de Blockchain em ambientes de IoT: oportunidades e desafios</h1>
+        <p>Palestrante: Roben Lunardi</p>
         <div className="mesa-redonda-content">
           <img id="mesa" src={People} alt="" />
           <div>
