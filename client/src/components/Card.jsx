@@ -57,7 +57,7 @@ const Card = ({ content, title, date, sub }) => {
             <label htmlFor="docker"></label>
             <input
               {...register('primeiro_dia')}
-              type="radio"
+              type="checkbox"
               name="primeiro_dia"
               value="docker"
               className="form-check-input"
@@ -89,7 +89,7 @@ const Card = ({ content, title, date, sub }) => {
           <div className="checkbox-inputs">
             <input
               {...register('segundo_dia')}
-              type="radio"
+              type="checkbox"
               name="segundo_dia"
               value="devOps"
               className="form-check-input"
