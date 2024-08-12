@@ -9,7 +9,7 @@ function Cursos() {
             id: 0,
             title: 'Introdução à Docker',
             author: 'Ministrante: Inaê Rosa',
-            description: ''
+            description: 'Explore o universo dos contêineres com uma abordagem da teoria à prática, utilizando imagens como Node e PostgreSQL. Diga adeus às horas gastas instalando softwares pesados na sua máquina local. Aprenda a orquestrar contêineres em Docker e evite o clássico "mas na minha máquina funciona". Ideal para maximizar sua produtividade e eficiência!'
         },
         {
             id: 1,
