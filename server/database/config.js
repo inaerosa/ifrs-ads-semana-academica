@@ -1,9 +1,8 @@
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 
 const connection = mongoose
   .connect(
-    `mongodb://${process.env.DBU}:${process.env.DBP}@127.0.0.1:27017/dbSemanaAcademica`,
+    `mongodb://127.0.0.1:27017/dbSemanaAcademica`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
