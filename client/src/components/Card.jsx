@@ -53,7 +53,7 @@ const Card = ({ content, title, date, sub }) => {
       return (
         <>
           <p>Mini-cursos</p>
-          <div className="checkbox-inputs">
+          {/* <div className="checkbox-inputs">
             <label htmlFor="docker"></label>
             <input
               {...register('primeiro_dia')}
@@ -63,17 +63,17 @@ const Card = ({ content, title, date, sub }) => {
               className="form-check-input"
               id="docker"
             />{' '}
-            <label>Introdução à Docker</label>
-          </div>
-          {/* <label htmlFor="React"></label>
+            <label>Introdução ao Docker</label>
+          </div> */}
+          <label htmlFor="docker"></label>
           <div className="checkbox-inputs">
-            <label htmlFor="teste">
+            <label htmlFor="docker">
               <div className="esgotado">
-                Introdução ao desenvolvimento web com React
+                Introdução ao Docker
               </div>
               <span>Esgotado</span>
             </label>
-          </div> */}
+          </div>
           <button
             type="button"
             onClick={() => resetField("primeiro_dia", { defaultValue: '' })}
@@ -86,7 +86,7 @@ const Card = ({ content, title, date, sub }) => {
       return (
         <>
           <p>Mini-cursos</p>
-          <div className="checkbox-inputs">
+          {/* <div className="checkbox-inputs">
             <input
               {...register('segundo_dia')}
               type="checkbox"
@@ -96,18 +96,18 @@ const Card = ({ content, title, date, sub }) => {
               id="devOps"
             />{' '}
             <label htmlFor="devOps">
-            Princípios fundamentais do DevOps
+              Princípios fundamentais do DevOps
             </label>
-          </div>
-          {/* <div className="checkbox-inputs">
+          </div> */}
+          <div className="checkbox-inputs">
 
-            <label htmlFor="teste">
+            <label htmlFor="devOps">
               <div className="esgotado">
-                Desenvolvimento Mobile com React Native
+                Princípios fundmentais do DevOps
               </div>
               <span>Esgotado</span>
             </label>
-          </div> */}
+          </div>
           <button
             type="button"
             onClick={() => resetField("segundo_dia", { defaultValue: '' })}
