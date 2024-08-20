@@ -71,7 +71,7 @@ const Card = ({ content, title, date, sub }) => {
               <div className="esgotado">
                 Introdução ao Docker
               </div>
-              <span>Esgotado</span>
+              <span>Cancelado</span>
             </label>
           </div>
           <button
