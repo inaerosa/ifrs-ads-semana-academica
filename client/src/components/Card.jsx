@@ -121,7 +121,7 @@ const Card = ({ content, title, date, sub }) => {
         <>
           <p>Palestras: </p>
           <div className="checkbox-inputs">
-            <input type="checkbox" name="mesa_redonda" id="mesa_redonda" {...register('mesa_redonda')} />
+            {/* <input type="checkbox" name="mesa_redonda" id="mesa_redonda" {...register('mesa_redonda')} /> */}
             <label>Uma jornada de adoção de Blockchain em ambientes de IoT: oportunidades e desafios </label>
           </div>
         </>

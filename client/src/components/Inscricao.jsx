@@ -83,7 +83,7 @@ function Inscricao() {
               content="three-day"
             />
           </div>
-          <button id="btn-submit" type="submit" onClick={methods.handleSubmit(onSubmit)}>Inscrever-se</button>
+          {/* <button id="btn-submit" type="submit" onClick={methods.handleSubmit(onSubmit)}>Inscrever-se</button> */}
         </FormProvider>
       </div>
     </>
